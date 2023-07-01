@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        header{
+            height: 100vh;
+            width: 100%;
+            background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)) ,url(1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        nav{
+            height:15vh;
+            width:100%;
+            background-color: rgba(0,0,0,0.2);
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            text-transform: uppercase;
+        }
+        nav .logo{
+            text-transform: uppercase;
+            color:#fff;
+            font-family: sans-serif;
+            width: 25%;
+            text-align: center;
+        }
+        nav .menu{
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav .menu a{
+            width: 25%;
+            text-decoration: none;
+            color:#fff;
+            font-weight: bold;
+        }
+        nav .menu a:first-child{
+            color:rgb(65, 199, 192);
+        }
+       main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: 100%;
+       text-align: center;
+        flex-direction: column;
+       }
+       section{
+        color:#fff;
+       }
+       section h3{
+        font-size: 3em;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: bold;
+        text-shadow: 2px 3px 5px #000;
+       }
+       section h1{
+        font-size: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 1px 0px 2px #000;
+       }
+       section p {margin:1px 0px 15px 0px;}
+       section a{
+        margin: 15px 0;
+        padding: 12px 20px;
+        border-radius: 4px;
+        outline: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: #fff;
+       }
+       .btn1{
+        background-color: rgb(201, 67, 34);
+      }
+      .btn2{
+        background-color: rgb(25, 155, 144);
+      }
+    .change_content:after{
+        content:" ";
+        animation: changetext 15s linear infinite;
+        color: orangered;
+    }
+        @keyframes changetext{
+            0%{content: "Mumbai"; }
+            20%{content: "Darjelling"; }
+            40%{content: "Noida"; }
+            60%{content: "Manali"; }
+            80%{content: "ladakh"; }
+            100%{content: "Goa"; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h1 class="animate__animated animate__wobble">I Love India</h1></div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">services</a>
+                <a href="">Contact</a>
+            </div>
+        </nav>
+        <main>
+        <section>
+            <h1>Welcome to India</h1>
+            <h3>Come and visit <span class="change_content"></span></h3>
+            <p>Incredible India</p>
+            <a href="" class="btn1">Lean More</a>
+            <a href="" class="btn2">SignUp</a>
+        </section>
+    </main>
+  
+    </header>
+</body>
+</html>
